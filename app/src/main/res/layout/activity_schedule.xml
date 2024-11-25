@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/datlichtructiep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ĐẶT LỊCH TRỰC TIẾP"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TableRow
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Họ tên:"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="225dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_hoten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="20sp">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Msv: "/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="225dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_msv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="20sp">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Thời gian: "/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="225dp"
+                app:endIconDrawable="@drawable/oclock"
+                app:endIconMode="custom"
+                app:endIconMinSize="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_thoigian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:enabled="true"
+                    android:maxLines="1"
+                    android:textSize="20sp">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Địa điểm: "/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="225dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_diadiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="20sp">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Số giờ: "/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="225dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_sogio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textSize="20sp">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Chi phí: "/>
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="30k/h"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="#FF0000"
+                android:layout_height="wrap_content"
+                android:text="Lưu ý: Thanh toán trước buổi học"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="27dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="22sp"
+                android:textColor="#FF0000"
+                android:layout_height="wrap_content"
+                android:text="STK: 0917466293 - MB Bank"/>
+        </TableRow>
+        <Button
+            android:id="@+id/btn_datlich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:layout_marginStart="50sp"
+            android:padding="12sp"
+            android:layout_marginEnd="50sp"
+            android:text="Xác nhận đặt lịch" />
+        <Button
+            android:id="@+id/btn_huy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:layout_marginStart="120sp"
+            android:padding="12sp"
+            android:layout_marginEnd="120sp"
+            android:text="Hủy"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
